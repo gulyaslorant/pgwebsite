@@ -14,10 +14,11 @@ body {
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: 47.9 95.8% 53.1%;
+    --primary: 346.8 77.2% 49.8%;
     --primary-foreground: 26 83.3% 14.1%;
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
+    --tertiary: 327 64% 97%
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 25 5.3% 44.7%;
     --accent: 60 4.8% 95.9%;
@@ -36,16 +37,16 @@ body {
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --background: 237 22% 20%;
+    --foreground: 210 20% 98%;
+    --card: 240 19% 16%;
+    --card-foreground: 210 20% 98%;
     --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-    --primary: 47.9 95.8% 53.1%;
-    --primary-foreground: 26 83.3% 14.1%;
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
+    --popover-foreground: 210 20% 98%;
+    --primary:  47.9 95.8% 53.1%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 240 19% 16%;
+    --secondary-foreground: 210 20% 98%;
     --muted: 12 6.5% 15.1%;
     --muted-foreground: 24 5.4% 63.9%;
     --accent: 12 6.5% 15.1%;
@@ -78,3 +79,30 @@ body {
   color: hsl(var(--primary)); /* Direkt aus deinem Farbsystem */
 }
 
+mh1 {
+  @apply text-[94px] xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
+}
+
+.h1 {
+  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
+}
+
+.h2 {
+  @apply text-4xl font-bold;
+}
+
+.h3 {
+  @apply text-3xl font-bold;
+}
+
+.h4 {
+  @apply text-[22px] font-semibold;
+}
+
+.subtitle {
+  @apply text-muted-foreground text-lg mb-8 font-light
+}
+
+.section-title {
+  @apply text-4xl text-primary font-bold relative w-max flex items-center justify-between gap-x-3
+}
