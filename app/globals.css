@@ -74,3 +74,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.logo-svg {
+  fill: currentColor;
+  color: hsl(var(--primary)); /* Direkt aus deinem Farbsystem */
+}
+
