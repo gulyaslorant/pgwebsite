@@ -1,9 +1,41 @@
 /** @format */
 
-import React from "react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
+import Nav from "./Nav";
+import Logo from "./Logo";
+import Socials from "./Socials";
+import { AlignJustify } from "lucide-react";
+import ThemeToggler from "./ThemeToggler";
 
 const MobileNav = () => {
-  return <div>MobileNav</div>;
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <AlignJustify className="cursor-pointer" />
+      </SheetTrigger>
+      <SheetTitle>
+        <span className="text-xs">(c) 2024</span>
+      </SheetTitle>
+      <SheetContent>
+        <div className="flex flex-col items-center justify-between h-full py-8">
+          <div className="flex flex-col items-center gap-y-32">
+            <Logo />
+            <Nav
+              containerStyles="flex flex-col items-center gap-y-6"
+              linkStyles="text-1xl"
+            />
+          </div>
+          {/* Social Links*/}
+          <Socials containerStyles="flex gap-x-4" iconStyles="text=2xl" />
+        </div>
+      </SheetContent>
+    </Sheet>
+  );
 };
 
 export default MobileNav;
