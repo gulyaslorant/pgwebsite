@@ -11,6 +11,7 @@ const links = [
   { path: "/projekte", name: "Projekte" },
   { path: "/buchen", name: "Buchen" },
   { path: "/about", name: "Über mich" },
+  { path: "/kontakt", name: "Kontakt" },
 ];
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   const path = usePathname();
